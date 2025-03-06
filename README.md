@@ -40,7 +40,7 @@ You can watch a demo video of the frontend [here](https://drive.google.com/file/
 
 ## Screenshot
 
-![Library Frontend Screenshot](images/screenshot.png)
+none
 
 ## Contributing
 
