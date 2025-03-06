@@ -1,0 +1,22 @@
+.my-divider {
+    height: 10rem;
+
+    &--small {
+        height: 3rem;
+    }
+
+    &--medium {
+        height: 5rem;
+    }
+
+    &--large {
+        height: 8rem;
+    }
+}
+
+.my-wrapper {
+    display:            flex;
+    width:              100%;
+    justify-content:    center;
+    align-items:        center;
+}

@@ -1,0 +1,41 @@
+.horizontal-box {
+    min-height:             100vh;
+    &__parallal{
+     
+        width:                      100%;
+        height:                     100%;
+        margin-top:                 0;
+        position:                   relative;
+        overflow:                   hidden;
+        box-sizing:                 border-box;
+
+        &-page {
+            display:                flex;
+            justify-content:        center;
+            align-items:            center;
+            padding:                1rem;
+        
+            &1 {
+                position:           absolute;
+                top:                0;
+                left:               0;
+                width:              100%;
+                height:             100vh;
+                margin-left:        0;
+                background-color: pink;
+            }
+
+            &2 {
+                position:           absolute;
+                display:            flex;
+                top:                0;
+                left:               0;
+                margin-left:        100%;
+                width:              100%;
+                height:             100%;
+                padding: 3rem;
+                background-color: skyblue;
+            }
+        }
+    }
+}

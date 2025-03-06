@@ -1,0 +1,46 @@
+.my-nav {
+  height: 100%;
+}
+
+.navbar {
+  background-color: rgba(3,22,52,1);
+  min-height: 16vh;
+
+  &-brand {
+    color: #fff !important;
+  }
+}
+ 
+a.nav-link  {
+color: #fff;
+}
+ 
+li.nav-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  &hover a.nav-link, a.nav-link:active, .a.nav-link:visited {
+    color: #000;
+    display: block;
+    position: relative;
+  }
+
+  &:hover::before  {
+    transform: scaleY(1);
+    width: 100%;
+    height: 100%;
+  }
+
+  &::before {
+  content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10%;
+    width: 10%;
+    background-color: #F4F3F7;
+    transform: scaleY(0);
+    transition: transform 0.3s, width 0.6s cubic-bezier(1, 0, 0, 1) 0.1s, background-color 0.3s;
+  }
+}

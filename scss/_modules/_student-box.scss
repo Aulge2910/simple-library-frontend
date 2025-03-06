@@ -1,0 +1,37 @@
+.student-box {
+     
+    width:              100%;
+    height:             100vh;
+    display:            flex;
+    flex-direction:     column;
+    justify-content:    center;
+    align-items:        center;
+    margin-top:         2rem;
+    margin-bottom:      2rem;
+ 
+    &__img {
+        height:             100%;
+        position:           relative;
+        display:            flex;
+        justify-content:    center;
+        align-items:        center;
+        overflow:           hidden;
+        width:              100%;
+        padding:            0.8rem;
+
+        & img {
+            position:       relative;
+            top:            0 ;
+            width: auto;
+            height:         auto;
+            border:         none;
+            mix-blend-mode: multiply;
+        }
+
+        &-student1 {
+            position:       relative;
+            top:            0;
+            left:           0;
+        }
+    }
+}

@@ -1,0 +1,88 @@
+.contact-box {
+    display:                flex;
+    box-sizing:             border-box;
+    justify-content:        start;
+    flex-direction:         column;
+  
+    margin:                 0 auto;
+    padding:                1.2rem;
+
+    width:                  80%;
+    height:                 auto;
+
+    border:                 1px solid #eee;
+    box-shadow:             3px 4px 4px rgba(0,0,0,0.5);
+    background:             linear-gradient(to right, #fff 90%, salmon 10%) left;
+
+    &__header {
+      text-transform:       capitalize;
+      margin:               1.2rem;
+      height:               100%;
+    
+        &__header span {
+            margin:         1rem 0 1rem 0;
+        }
+    }
+
+    &__body {
+        display:            flex;
+        justify-content:    space-between;
+        flex-wrap:          wrap;
+        flex-direction:     row;
+        width:              100%;
+        padding:            0.8rem;
+        height:             100%;
+ 
+        &-form {
+            margin:         1.2rem 0;
+            min-width:          40%;
+        
+            display:        flex;
+            flex-direction: column;
+            align-items:    start;
+            justify-content: start;
+
+            & input, & textarea {
+                border:             none;
+                border-bottom:      3px solid #000;
+                width:              100%;
+                margin:             0.6rem 0.2rem;
+                padding:            0.4rem 0.2rem;
+            }
+
+            & button {
+                width:              100%;
+                background-color:   #FAE2D1;
+                color:              #fff;    
+                border:             none;
+                padding:            0.8rem;
+                margin:             0.2rem 0.4rem;
+                display:            block;
+                text-align:         center;
+                border-radius:      5px;
+                box-shadow:         4px 5px 6px rgba($color: #000000, $alpha: 0.4);
+
+                &:hover {
+                    background-color: #FBBE93;
+                    color:            #FAE2D1;
+                }
+            }
+        }
+
+        &-address {
+           
+            min-width:                  40%;
+      
+            background-color:       #FFFDF1;
+            opacity:                1;
+     
+            box-shadow:             4px 0px 4px rgba(0,0,0,0.5);
+            padding:                0.8rem;
+            text-transform:         capitalize;
+
+            & span, h3, p {
+                margin:             0.2rem 0.4rem;
+            }
+        }
+    }
+}

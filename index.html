@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+ 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My Demo Web</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+        <!-- CSS references -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/fonts/poppins/poppins.css">
+        <link href="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.css" rel="stylesheet">
+
+
+        <!-- JS references -->
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+
+        <!-- GSAP references -->
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+
+
+
+    </head>
+    <body>     
+
+
+        <!-- header -->
+        <header>  
+            <nav class="navbar navbar-expand-lg py-0" >
+                <div class="my-nav container-fluid py-0"  >
+                  <a class="navbar-brand px-lg-4" href="index.html">Logo</a>
+               
+                  <!-- toggle button-->
+
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <!-- navbar-->
+               
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 ms-auto mb-2 mb-lg-0 fs-lg-5"    >
+                      <li class="nav-item mx-lg-4 justify-content-center d-flex flex-wrap align-items-center text-center ">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item mx-lg-4 justify-content-center d-flex align-items-center">
+                        <a class="nav-link" href="#about">About</a>
+                      </li>
+                      <li class="nav-item mx-lg-4 justify-content-center d-flex align-items-center"> 
+                        <a class="nav-link" href="#contact-us">Contact</a>
+                      </li>
+                        <li class="nav-item mx-lg-4 justify-content-center d-flex align-items-center"> 
+                        <a class="nav-link" href="#service">Service</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </header>
+        
+
+        <!-- student-box    (primary user)-->
+        <section class="student-box" id="about">
+            <h1 class="text-capitalize my-2">Our Primary User</h1>
+            <div class="student-box__img">
+                <img class="student-box__img-student1" src="img/stu1.png">
+                <img class="student-box__img-student2" src="img/stu2.png">
+                <img class="student-box__img-student3" src="img/stu3.png">  
+                <img class="student-box__img-student4" src="img/stu4.png">  
+            </div>
+        </section>
+
+
+        <!-- divider -->
+        <div class="my-divider"></div>
+
+
+
+        <!-- book-collections   (books)-->
+        <section class="container-fluid d-flex flex-column overflow-hidden"  > 
+            <h1 class="text-capitalize text-center my-2">Our Books Collections</h1>
+            <div class="my-wrapper flex-wrap">
+
+                <!-- books transaction 1 -->
+                <div class="collections-box collections-box--chinese">
+                    <img class="collections-box__icon" src="img/book2.svg">
+                    <h3>Chinese</h3>
+                    <div class="collections-box__body">          
+                        <span id="book-no1">0</span>
+                        <div class="collections-box__book-list  collections-box__book-list1">
+                            <p>- 小王子</p>
+                            <p>- 哈利波特</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                 <!-- books transaction 2 -->
+                <div class="collections-box collections-box--english">
+                    <img class="collections-box__icon" src="img/book2.svg">
+                    <h3>English</h3>
+                    <div class="collections-box__body">          
+                        <span  id="book-no2">0</span>
+                        <div class="collections-box__book-list  collections-box__book-list2">
+                            <p>- Little Prince</p>
+                            <p>- Harry Potter</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- books transaction 3 -->
+                <div class="collections-box collections-box--malay">
+                    <img class="collections-box__icon" src="img/book2.svg">
+                    <h3>B.Malay</h3>
+                    <div class="collections-box__body">          
+                        <span  id="book-no3">0</span>
+                        <div class="collections-box__book-list   collections-box__book-list3">
+                            <p>- Seorang Tua di Kaki Gunung</p>
+                            <p>- Ranjau Sepanjang Jalan</p>
+                        </div>     
+                    </div>
+                </div>
+
+
+                 <!-- books transaction 4 -->
+                <div class="collections-box  collections-box--iban">
+                    <img class="collections-box__icon" src="img/book2.svg">
+                    <h3>Others</h3>
+                    <div class="collections-box__body">          
+                        <span  id="book-no4">0</span>
+                        <div class="collections-box__book-list  collections-box__book-list">
+                            <p>- Sea Dayak</p>
+                            <p>- Fantastic Four</p>
+                        </div>              
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- divider  -->
+        <div class="my-divider"></div>
+        
+
+        <!-- story-box -->
+        <section class="container overflow-hidden ">
+            <h1 class="text-capitalize text-center my-2">It's time to read!</h1>     
+
+
+            <!-- story-box 1 -->
+            <div class="story-box my-5">
+                <h2 class="text-uppercase">Magic of Books</h2>
+                <div class="story-box__body">
+                    <div class="story-box__img">
+                        <img src="./img/story6.jpg">
+                    </div>
+                    <div class="story-box__text align-self-start mx-auto fs-lg-3 fs-md-5 p-lg-1 p-sm-2 p-md-3">
+                        <p class="">There is more treasure in books than in all the pirate's loot on Treasure Island.</p>
+                    </div>  
+                </div>
+            </div>
+
+
+            <!-- story-box 2 -->
+            <div class="story-box my-5">
+                <h2 class="text-uppercase" >Books can be dangerous</h2>
+                <div class="story-box__body ">
+                    <div class="story-box__img">
+                        <img src="./img/story11.jpg">
+                    </div>
+                    <div class="story-box__text align-self-start mx-auto fs-lg-3 fs-md-5 p-lg-1 p-sm-2 p-md-3"  >
+                        <p>The best ones should be labeled “This could change your life.</p>
+                    </div>  
+                </div>
+            </div>
+
+
+            <!-- story-box 3 -->
+            <div class="story-box   my-5">
+                <h2 class="text-uppercase"  >Books are the mirrors</h2>
+                <div class="story-box__body  ">
+                    <div class="story-box__img">
+                        <img src="./img/story9.jpg">
+                    </div>
+                    <div class="story-box__text align-self-start mx-auto fs-lg-3 fs-md-5 p-lg-1 p-sm-2 p-md-3" >
+                        <p>Today a reader, tomorrow a leader.</p>
+                    </div>  
+                </div>
+            </div>
+
+
+            <!-- story-box 4 -->
+            <div class="story-box my-5">
+                <div class="story-box__header ">
+                    <h2 class="text-uppercase">Books are the plane, the train, and the road</h2>
+                </div>
+                <div class="story-box__body">
+                    <div class="story-box__img">
+                        <img src="./img/story11.jpg">
+                    </div>
+                    <div class="story-box__text align-self-start mx-auto fs-lg-3 fs-md-5 p-lg-1 p-sm-2 p-md-3" >
+                        <p>They are the destination, and the journey. They are home.</p>
+                    </div>  
+                </div>
+            </div>
+        </section> 
+
+        
+        <!-- divider -->
+        <div class="my-divider"></div>
+
+
+        <!-- horizontal scroll -->
+        <section class="horizontal-box" id="contact-us">
+            <div class="horizontal-box__parallal">
+
+                <!-- parallal page 1 -->
+                <div class="horizontal-box__parallal-page horizontal-box__parallal-page1">
+
+                    <!-- scroll item 1 -->
+                    <div class="scroll-box scroll-box--bgCity "> 
+                        <img class="scroll-box__animatedIcon" src="img/witch.gif">
+                        <h1 class="fs-lg-1 fs-md-1 fs-3">There is never too late to start</h1>
+                    </div>
+                </div>
+
+
+                <!-- parallal page 1 -->
+                <div class="horizontal-box__parallal-page horizontal-box__parallal-page2">
+
+
+                    <!-- scroll item 2 -->
+                    <div class="contact-box"  >
+                        <div class="contact-box__header ">
+                            <h1>Contact Us </h1>
+                            <span>Feel Free to contact us anytime. We will get you soon!</span>
+                        </div>
+                        <div class="contact-box__body ">
+                            <form class="contact-box__body-form ">
+                                <input type="text" placeholder="Your Name" id="userName"  ><br>
+                                <input type="email" placeholder="Your Email" id="userEmail" ><br>
+                                <textarea  placeholder="Your Message" id="userMessage" rows="4" cols="25"></textarea><br>
+                                <button type="submit" class="btn btn-outline-secondary m-auto">Let's Chat!</button>
+                            </form>
+                            
+                            <div class="contact-box__body-address">
+                                <h3>Get In Touch</h3>
+                                <div class="divider w-100" style="border-bottom: 1px solid black"></div>
+                                <p class="fw-bold">Do not Hesitate to reach us </p>
+                                <span>Jalan Sarikei, Sarawak.</span><br>
+                                <span>+084-65-7777</span>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>     
+
+
+        <!-- footer -->
+        <footer class="">
+            <!-- divider -->
+            <div class="my-divider my-divider--medium"></div>
+            <div class="container-fluid" id="service">
+                <div class="row">
+                    <div class="col-lg-8 my-2 px-lg-4">
+                        <h4 class="text-capitalize">Get In Touch</h4>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                        <br>
+
+
+                        <!-- social icon -->
+                        <div class="social-box my-4">
+                            <a href="#"><i class="bi bi-facebook  mx-1" ></i></a>
+                            <a href="#"><i class="bi bi-instagram   mx-1" ></i></a>
+                            <a href="#"><i class="bi bi-twitter   mx-1" ></i></a>
+                            <a href="#"><i class="bi bi-google   mx-1" ></i></a>
+                        </div>
+                            
+                    </div>
+
+
+                    <!-- footer navigation bar -->
+                    <div class="col-lg-2 m-2 px-lg-4">
+                        <ul class="navbar-nav flex-column">
+                            <li class="nav-item">
+                              <a class="nav-link" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#contact-us">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#service">Service</a>
+                              </li>
+                          </ul>
+                    </div>
+
+                    <!-- Image attributions  -->
+                    <div class="col-12 my-2 px-lg-4">
+                        <span><a href="https://www.freepik.com/free-vector/outline-landmarks-skyline_6989793.htm#query=city%20line&position=25&from_view=keyword&track=ais_user&uuid=0ee4eb07-8675-4ef5-afc7-cb1ceed2134e">Image by freepik</a></span><br>
+                        <span><a href="https://www.freepik.com/free-vector/group-students-school_9354275.htm#fromView=search&page=1&position=4&uuid=c89d7357-0368-44e5-9db9-a87b574f2a8f">Image by pikisuperstar on Freepik</a></span><br>
+                        <span><a href="https://iconscout.com/icons/book" class="text-underline font-size-sm" target="_blank">Book</a> by <a href="https://iconscout.com/contributors/thalita-torres" class="text-underline font-size-sm" target="_blank">Thalita Torres</a></span>
+            
+                    </div>
+                </div>    
+            <div class="my-divider my-divider--medium"></div>
+        </footer>
+        
+    
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+.scroll-box {
+    display:                flex;
+    justify-content:        start;
+    flex-wrap:              wrap;
+    flex-direction:         column;
+    
+    width:                  75%;
+    height:                 75%;
+    margin:                 1.2rem;
+    padding:                0.8rem;
+
+    overflow:               hidden;
+    
+    border-radius:          15px;
+    border:                 1px solid black;
+    box-shadow:             5px 8px 4px rgba(0,0,0,0.5);
+    background-color:       #fff;
+
+    &--bgCity {
+        background:         url("../../img/a1.svg") no-repeat fixed center;
+    }
+
+    &__animatedIcon {
+        position:           relative;
+        height:             40px;
+        width:              40px;
+        left:               0;
+        margin-left:        0;
+        top:                calc( 50% + 6rem + 6rem );
+    }
+
+    & h1 {
+        position:           relative;
+        left:               0;
+        top:                0;
+        text-align:         right;
+        text-transform:     capitalize;
+    }
+}

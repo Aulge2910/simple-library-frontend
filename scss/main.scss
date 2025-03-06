@@ -1,0 +1,155 @@
+@import "./_utilities/utilities-dir";
+@import "./_base/base-dir";
+@import "./_layouts/layouts-dir";
+@import "./_modules/modules-dir";
+ 
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width : 1200px) {
+
+  .my-divider {
+    height: 8rem;
+  }
+
+  .contact-box__body-form, .contact-box__body-address{
+    min-width: 40%;
+    max-width: 42%;
+  }
+
+  .collections-box {
+    min-width: 40%;
+    max-width: 40%;
+  }
+}
+
+@media only screen and (max-width : 992px) {
+
+  .navbar {
+    min-height: auto;
+  }
+
+  .student-box__img img {
+    width: 50%;
+  }
+  
+  .contact-box__header {
+    text-transform:       capitalize;
+    margin:               0rem;
+  
+    & span {
+      margin:         0.2rem 0 0.2rem 0;
+    }
+  }
+}
+
+@media only screen and (max-width : 768px) {
+
+  .contact-box__body {
+    padding: 0.2rem;
+  
+    &-form {
+      margin:         0.2rem 0rem;
+      min-width:          40%;
+
+      display:        flex;
+      flex-direction: column;
+      align-items:    start;
+      justify-content: start;
+
+      & input, & textarea {
+          border:             none;
+          border-bottom:      3px solid #000;
+          width:              100%;
+          margin:             0.2rem 0.1rem;
+          padding:            0.2rem 0.1rem;
+      }
+    }
+  }
+
+  .my-divider {
+    height: 5rem;
+  }
+
+  .contact-box__body-form, .contact-box__body-address{
+    min-width: 100%;   height: 50%;
+    max-width: 100%;
+  }
+
+}
+@media only screen and (max-width : 576px) {
+ 
+  .student-box__img img {
+    width: 20%;
+  }
+
+  .contact-box h1 {
+    font-size: 16px;
+  }
+
+  .contact-box > * {
+    font-size: calc(10px + 0.390625vw);
+  }
+
+  .my-divider {
+    height: 3rem;
+  }
+  .story-box__text p {
+      font-size: calc(10px + 0.390625vw);
+  }
+
+    .story-box__body {
+      height: 45vh;
+  }
+
+  .horizontal-story {
+    margin-top: 60rem;
+    margin-bottom: 10rem;
+  }
+
+  .collections-box {
+    padding: 1rem;
+    min-width: 100%;
+    height: auto;
+  }
+}
+
+ 
+ 
+
+@import "../node_modules/bootstrap/scss/functions";
+ 
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+
+ 
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+ 
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/navbar";
+ 
+ 
+/*** Enables the font size utilities in responsive such as  ->  fs-lg-1, fs-md-1 ***/
+$utilities: map-merge(
+  $utilities, (
+    "font-size": map-merge(
+      map-get($utilities, "font-size"),
+      ( responsive: true ),
+    ),
+  )
+);
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "../node_modules/bootstrap/scss/utilities/api";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+ 
+ 

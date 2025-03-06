@@ -1,0 +1,110 @@
+
+
+.collections-box {
+    
+    min-width:              22%;
+    max-width:              20%;
+
+    text-align:             center;
+    margin:                 1rem;
+    height:                 20rem;
+    
+    display:                flex;
+    flex-direction:         column;
+    align-self:             stretch;
+    justify-content:        center;
+    align-items:            center;
+    flex-basis:             25%;
+
+    border-radius:          10px;
+    padding:                0.4rem;
+    box-shadow:             2px 8px 10px rgba($color: #000000, $alpha: 0.3);
+    -webkit-transition:     all .4s;
+    transition:             all .4s;
+   
+
+    &--chinese {
+        background: linear-gradient(to left, transparent 50%, salmon 0%) right;
+        background-size: 200%;
+    }
+
+    &--english {
+        background: linear-gradient(to left, transparent 50%, skyblue 0%) right;
+        background-size: 200%;
+    }
+
+    &--malay {
+        background: linear-gradient(to left, transparent 50%, #FFD278 0%) right;
+        background-size: 200%;
+    }
+
+    &--iban {
+        background: linear-gradient(to left, transparent 50%, #C7FF88 0%) right;
+        background-size: 200%;
+    }
+
+    &:hover &__header h3 {
+        color:                      #fff;
+    }
+
+    &:hover{
+        background-position:        left; 
+        transform:                  translateY(-1.5rem) scale(1.03);   
+    }
+
+    &:hover &__book-list p, &__body span{
+        color:                      #fff;
+    }
+
+    &__book-list {
+        position:                   relative;
+        top:                        0;
+        left:                       0;
+
+        transform:                  translate(0%, 40%);
+        opacity:                    0;
+        -webkit-backface-visibility: hidden;
+        backface-visibility:        hidden;
+        transition:                 .8s ease-in;
+
+        & p {
+            padding:                0;
+            margin:                 0;
+            color:                  rgba($color: #000000, $alpha: 0.4);
+        }
+    }
+
+    &:hover &__book-list {
+        transform:                   translate(0%, 0%);
+        opacity:                     1;
+    }
+
+    &__icon {
+        max-width:                  100px;
+        max-height:                 80px;
+        border:                     none;
+    }
+
+    &__header{
+        margin:                     0.4rem;
+        display:                    flex;
+        flex-direction:             column;
+        text-align:                 center;
+        transition:                 .2s all;
+    }
+
+    &__body {
+        margin:                     0.4rem;
+        display:                    flex;
+        justify-content:            space-between;
+        align-items:                center;
+        flex-direction:             column;
+        text-align:                 center;
+        transition:                 .2s all;
+ 
+        & span {
+            color: rgba($color: #fff, $alpha: 0.4);
+        }
+
+    }
+}
